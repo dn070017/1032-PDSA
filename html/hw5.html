@@ -1,0 +1,44 @@
+<body>
+<h1>HW5</h1>
+<p>In this homework, you will be guided to learn:</p>
+<ol>
+<li>How to draw points in a 2-dimensional plane;</li>
+<li>How to use 'compareTo';</li>
+<li>How to find convex hull;</li>
+</ol>
+<h3>Assignment: HW5-1 (due: 4/7 21:00 Ceiba)</h3>
+<ol>
+<li>利用StdRandom產生N個2D points (用Point2D的array來儲存)，再搭配StdDraw把這個N個點畫出來(radius= 0.01)</li>
+<li>找到y座標最小的點，改成用紅色(RED)畫點</li>
+<li>以紅點為基礎(p)，計算其他點與紅點的角度，按照角度排序(逆時鐘)</li>
+</ol>
+<h3>Assignment HW5-2 (due: 4/14 21:00 批改系統)</h3>
+<ol>
+<li>找出構成convex hull的point set</li>
+<li>移除構成convex hull的point set，如果剩下的點個數&gt;=3，在剩下的點當中再找出convex hull</li>
+<li>重覆Step 2直到剩下的點個數&lt;3</li>
+</ol>
+<p><strong>Note 1:</strong> HW5-1請實作於一支java程式中，程式的main function要吃進args[0]作為N，畫好的圖上傳至ceiba (N=10, 50, 100)</p>
+<p><strong>Note 2:</strong> HW5-2需輸出文字模式到批改系統繳交。
+The main function of the source code &quot;MyConvexHull.java&quot; must read in a input file (輸入範例如附檔：<a href="data.in">data.in</a>), of which the first line specifies the value of N, followed by the coordinates of the N points, and output the convex hulls recursively as requested.</p>
+<p>輸出時，輸入檔中 y-軸最小的點的編號為0，其他點請按照其與y-軸最小的點的角度依序編號(逆時鐘)。輸出第二個convex hull 的時候，仍請使用上述點編號。</p>
+<p>輸出各個convex hull的時候，請以y-軸最小的點為起點，然後依逆時鐘方向輸出其他點。</p>
+<p>The source code &quot;MyConvexHull.java&quot; must have a function named &quot;ConvexHullVertex&quot; that takes in an array of 2D points and return a int[] of the set constituting the convex hull:</p>
+<pre><code>public class MyConvexHull {
+
+    public static int[] ConvexHullVertex(Point2D[] a) { 
+    // 回傳ConvexHullVertex的index set，編號請依該點在a陣列中的順序編號：0, 1, 2, 3, 4, ....a.length-1
+    }
+
+    public static void main(String[] args) {
+    //輸出時，輸入檔中y-軸最小的點的編號為0，其他點請按照其與y-軸最小的點的角度依序編號(逆時鐘)。輸出第二個convex hull 的時候，仍請使用上述點編號。
+    }
+}
+</code></pre>
+
+<p><strong>Example output</strong> of &quot;data.in&quot;</p>
+<p>0 1 4 5 6 10 14 18 19<br>
+3 2 8 11 15 17 16<br>
+13 9 7 12</p>
+
+</body>

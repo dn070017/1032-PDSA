@@ -1,0 +1,62 @@
+<body>
+<h1>HW2 - Connectivity</h1>
+ 
+<h3>Assignment 2-1: Language Areas</h3>
+Multi-language countries is a country that uses of two or more languages, either by an individual speaker or by a community of speakers. Image that, we are in a multi-language country and here is a map which shows the languages the residents speak in different states.<br>
+<br>
+ttuuttdd<br>
+ttuuttdd<br>
+uuttuudd<br>
+uuttuudd<br>
+<br>
+This is a map containing 4x8 states. Different letters (t,u,d) stand for different languages used in a particular state. Two states are connected if they use the same language (the same letter) and are adjacent (left, right, above or below). So in the above map, there are three areas where the language "t" is spoken, three where "u" is spoken and one area where people speak "d".<br>
+<br>
+Please write a Java class named 'LanguageAreas.java' and submit it to the judger.<br>
+Output: Print out the number of areas in which a language is used.<br>
+<br>
+<b>Sample Input</b> <a href="hw2.in.txt">hw2.in.txt</a><br>
+9 9<br>
+bbbbbbbbb<br>
+aaaaaaaab<br>
+bbbbbbbab<br>
+baaaaacab<br>
+bacccccab<br>
+bacbbbcab<br>
+bacccccab<br>
+baaaaaaab<br>
+bbbbbbbbb<br>
+<br>
+<b>Sample Output</b> (languages in alphabetical order)<br>
+a:1<br>
+b:2<br>
+c:1<br>
+
+<h3>Assignment 2-2: Read Pre-grouping for Assembly</h3>
+Next-generation sequencing (NGS) is a newly developed technology that has the power to deliver short DNA reads with a considerably low cost. One important task in DNA sequencing is to assemble these short reads into longer DNA sequences. 
+This homework assignment is not going to assemble these short reads into final sequences. Instead, you are asked to perform a task called pre-grouping of reads, which can later be used by assemblers.<br>
+<br>
+In this assignment, the input would be a lot of k-mer reads and you should group reads into connected components based on the overlap principal. The principal requires the overlap of two reads larger than or equal to n (k = length of reads, n = minimal overlap length).
+For examples, if k = 10 and n = 3, and if the overlap between two reads is larger than or equal to 3, these two reads are considered related and should be put in the same group.
+In other words, overlap lengths 10, 9, 8, 7, 6, 5, 4, 3 are qualified. <br>
+<br>
+<b>A small example of read set</b><br>
+<br>
+<font face="courier new">
+read1:__________AGAGCTAGCA<br>
+read2:___AGCTGCTAGA<br>
+read3:___________GATTATACTG<br>
+read4:_TCAGCTGCTA<br></font>
+<br>
+In the configuration of k = 10 and n =3, read1 and read2 must be grouped together (overlap = 3), but read2 and read3 are not (overlap = 2). In the end, read1, read2, and read4 are in the same group because of the qualified overlap between read1 and read2 and the qualified overlap between read2 and read4.<br>
+<br>
+In HW2-2, you are requested to write a program named ReadAssembler.java, which finally outputs the number of groups (connected components). For this small example, your program should output '2'.<br>
+<br>
+<b>Sample input</b> <a href="hw2-2.in.txt">hw2-2.in.txt</a><br>
+<br>
+<b>Sample output</b><br>
+3<br>
+<br>
+<b>Note:</b><br>
+Your program should check whether all the reads in the input file are with a length of k. If not, your program should terminate properly and print "Input error!" to the standard output.<br>
+
+</body>

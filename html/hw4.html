@@ -1,0 +1,20 @@
+<p>HW4: Deques</p><br />
+<p>Write a generic data type for a deque . The goal of this assignment is to implement elementary data structures using arrays and linked lists, and to introduce you to generics and iterators.</p><br />
+<p><strong>Dequeue.</strong> A double-ended queue or deque (pronounced &quot;deck&quot;) is a generalization of a stack and a queue that supports adding and removing items from either the front or the back of the data structure. Create a generic data type Deque that implements the following API:</p><br />
+<pre><code>public class Deque<Item> implements Iterable<Item> {<br />
+   public Deque()                           // construct an empty deque<br />
+   public boolean isEmpty()                 // is the deque empty?<br />
+   public int size()                        // return the number of items on the deque<br />
+   public void addFirst(Item item)          // add the item to the front<br />
+   public void addLast(Item item)           // add the item to the end<br />
+   public Item removeFirst()                // remove and return the item from the front<br />
+   public Item removeLast()                 // remove and return the item from the end<br />
+   public Iterator<Item> iterator()         // return an iterator over items in order from front to end<br />
+   public static void main(String[] args)   // unit testing<br />
+}<br />
+</code></pre><br />
+<br />
+<p><strong>Corner cases.</strong> Throw a java.lang.NullPointerException if the client attempts to add a null item; throw a java.util.NoSuchElementException if the client attempts to remove an item from an empty deque; throw a java.lang.UnsupportedOperationException if the client calls the remove() method in the iterator; throw a java.util.NoSuchElementException if the client calls the next() method in the iterator and there are no more items to return.</p><br />
+<p><strong>Performance requirements.</strong> Your deque implementation must support each deque operation in constant worst-case time and use space proportional to the number of items currently in the deque. Additionally, your iterator implementation must support each operation (including construction) in constant worst-case time. </p><br />
+<br />
+

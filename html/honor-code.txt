@@ -1,0 +1,5 @@
+Please remember that by taking this course, you are bound by the honor code not to post solutions (or partial solutions) to the programming assignments. This includes discussion forum posts, web pages, and public repositories (such as Github). If you are doing so, please take a few minutes now to remove any material that could compromise the integrity of the programming assignments for current or future students. Also, if you discover solutions or partial solutions that are public, please feel free to politely ask the individual to remove the code (since they may be unaware of the course policy).
+
+Also, please do not post the course materials (videos, lecture slides, etc.) to other websites or YouTube. You are most welcome to download the videos and lecture slides for personal use.
+
+Finally, we note that all of the code in stdlib.jar and algs4.jar has been released under the GPLv3, so feel free to use, modify, and improve these libraries accordingly.
